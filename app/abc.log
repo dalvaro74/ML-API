@@ -1,0 +1,23 @@
+[2020-03-12 21:38:39.866] INFO [140403251373888] - ****************** Starting Server *****************
+[2020-03-12 21:41:47.852] INFO [139835590854464] - ****************** Starting Server *****************
+[2020-03-12 21:42:46.739] INFO [140359862474560] - ****************** Starting Server *****************
+[2020-03-12 21:42:52.633] DEBUG [140359095006976] - {'satisfaction_level': 0.68, 'last_evaluation': 0.53, 'number_project': 2.0, 'average_montly_hours': 157.0, 'time_spend_company': 3.0, 'Work_accident': 0.0, 'promotion_last_5years': 0.0, 'sales': 'support', 'salary': 'low'}
+[2020-03-12 21:42:52.634] DEBUG [140359095006976] - [0.68, 0.53, 2.0, 157.0, 3.0, 0.0, 0.0, 'support', 'low']
+[2020-03-12 21:42:52.636] DEBUG [140359095006976] - [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 1.0, 0.0]
+[2020-03-12 21:42:52.636] DEBUG [140359095006976] - [  0.68   0.53   2.   157.     3.     0.     0.     0.     0.     0.
+   0.     0.     0.     0.     0.     1.     0.     0.     1.     0.  ]
+[2020-03-12 22:01:01.229] DEBUG [140359095006976] - {'satisfaction_level': 0.0, 'last_evaluation': 0.0, 'number_project': 0.0, 'average_montly_hours': 0.0, 'time_spend_company': 0.0, 'Work_accident': 0.0, 'promotion_last_5years': 0.0, 'sales': 'string', 'salary': 'string'}
+[2020-03-12 22:01:01.229] DEBUG [140359095006976] - [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 'string', 'string']
+[2020-03-12 22:01:09.421] DEBUG [140358985967360] - {'satisfaction_level': 0.0, 'last_evaluation': 0.0, 'number_project': 0.0, 'average_montly_hours': 0.0, 'time_spend_company': 0.0, 'Work_accident': 0.0, 'promotion_last_5years': 0.0, 'sales': 'string', 'salary': 'string'}
+[2020-03-12 22:01:09.422] DEBUG [140358985967360] - [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 'string', 'string']
+[2020-03-12 22:03:47.235] DEBUG [140359095006976] - {'satisfaction_level': 0.0, 'last_evaluation': 0.0, 'number_project': 0.0, 'average_montly_hours': 0.0, 'time_spend_company': 0.0, 'Work_accident': 0.0, 'promotion_last_5years': 0.0, 'sales': 'sales', 'salary': 'low'}
+[2020-03-12 22:03:47.236] DEBUG [140359095006976] - [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 'sales', 'low']
+[2020-03-12 22:03:47.239] DEBUG [140359095006976] - [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 1.0, 0.0]
+[2020-03-12 22:03:47.239] DEBUG [140359095006976] - [0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0. 1. 0.]
+[2020-03-12 22:07:59.789] INFO [140465765312320] - ****************** Starting Server *****************
+[2020-03-12 22:08:38.535] DEBUG [140464992794368] - {'satisfaction_level': 0.0, 'last_evaluation': 0.0, 'number_project': 0.0, 'average_montly_hours': 0.0, 'time_spend_company': 0.0, 'Work_accident': 0.0, 'promotion_last_5years': 0.0, 'sales': 'string', 'salary': 'string'}
+[2020-03-12 22:08:38.536] DEBUG [140464992794368] - [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 'string', 'string']
+[2020-03-12 22:09:17.397] INFO [139819786422080] - ****************** Starting Server *****************
+[2020-03-12 22:09:29.813] DEBUG [139819019654912] - {'satisfaction_level': 0.0, 'last_evaluation': 0.0, 'number_project': 0.0, 'average_montly_hours': 0.0, 'time_spend_company': 0.0, 'Work_accident': 0.0, 'promotion_last_5years': 0.0, 'sales': 'string', 'salary': 'string'}
+[2020-03-12 22:09:29.814] DEBUG [139819019654912] - [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 'string', 'string']
+[2020-03-12 22:09:29.815] ERROR [139819019654912] - Something went wrong!

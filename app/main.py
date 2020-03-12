@@ -1,7 +1,10 @@
 # Data Handling
+from fastapi.logger import logger as fastapi_logger
+from logging.handlers import RotatingFileHandler
 import logging
 import pickle
 import numpy as np
+
 from pydantic import BaseModel
 
 # Server
@@ -14,9 +17,14 @@ import lightgbm
 app = FastAPI()
 
 # Initialize logging
-my_logger = logging.getLogger()
-my_logger.setLevel(logging.DEBUG)
-# logging.basicConfig(level=logging.DEBUG, filename='sample.log')
+#Para Fastapi la gestion y tratamiento de logs es distinto del standar de python
+
+formatter = logging.Formatter("[%(asctime)s.%(msecs)03d] %(levelname)s [%(thread)d] - %(message)s", "%Y-%m-%d %H:%M:%S")
+handler = RotatingFileHandler('abc.log', backupCount=0)
+logging.getLogger().setLevel(logging.NOTSET)
+fastapi_logger.addHandler(handler)
+handler.setFormatter(formatter)
+fastapi_logger.info('****************** Starting Server *****************')
 
 # Initialize files
 clf = pickle.load(open('data/model.pickle', 'rb'))
@@ -41,16 +49,20 @@ def predict(data: Data):
     try:
         # Extract data in correct order
         data_dict = data.dict()
+        fastapi_logger.debug(data_dict)
         to_predict = [data_dict[feature] for feature in features]
+        fastapi_logger.debug(to_predict)
 
         # Apply one-hot encoding
         encoded_features = list(enc.transform(np.array(to_predict[-2:]).reshape(1, -1))[0])
+        fastapi_logger.debug(encoded_features)
         to_predict = np.array(to_predict[:-2] + encoded_features)
+        fastapi_logger.debug(to_predict)
 
         # Create and return prediction
         prediction = clf.predict(to_predict.reshape(1, -1))
         return {"prediction": int(prediction[0])}
     
     except:
-        my_logger.error("Something went wrong!")
+        fastapi_logger.error("Something went wrong!")
         return {"prediction": "error"}
