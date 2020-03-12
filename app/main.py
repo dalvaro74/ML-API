@@ -7,7 +7,7 @@ import numpy as np
 
 from pydantic import BaseModel
 
-# A ver si funciona el credential helperyy
+# A ver si funciona el credential helper
 
 # Server
 import uvicorn
