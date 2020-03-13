@@ -1,4 +1,7 @@
-FROM tiangolo/uvicorn-gunicorn:python3.6-alpine3.8
+FROM tiangolo/uvicorn-gunicorn-fastapi:python3.6-alpine3.8
+
+#Numpy para Alpine
+RUN apk --no-cache add --virtual .builddeps gcc gfortran musl-dev    && pip install numpy==1.18.1     && apk del .builddeps     && rm -rf /root/.cache
 
 # Make directories suited to your application
 RUN mkdir -p /home/project/app

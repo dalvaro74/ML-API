@@ -1,0 +1,9 @@
+No funciona porque parece que lightgbm y numpy no se llevan nada bien en Alpine.
+Cambie el docker de tiangolo por uno que ya tuviera fastApi, ademas de uvicorn y gunicorn, 
+para no tener que instalarlo en el requeriments (tiangolo/uvicorn-gunicorn-fastapi).
+En el Dockerfile incluí una instalacion especial de numpy en Alpine, ya que desde requeriments no funcionaba
+#Numpy para Alpine
+RUN apk --no-cache add --virtual .builddeps gcc gfortran musl-dev    && pip install numpy==1.18.1     && apk del .builddeps     && rm -rf /root/.cache
+
+En cualquier caso en cuanto instalba lightgbm estando numpy (incluso haciendolo a posteriori sobre el propio contenedor, 
+al que no le habia instalado lightgbm) fallaba
